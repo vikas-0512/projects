@@ -1,0 +1,46 @@
+# include <iostream>
+# include <ctime>
+# include <cstdlib>
+using namespace std;
+void bubble_sort(int arr[],int n)
+{
+ int i;
+ for(i=n-1;i>=1;i--)
+ {
+ int flag=0;
+ for(int j=0;j<i;j++)
+ {
+ if(arr[j]>arr[j+1])
+ {
+ int temp=arr[j];
+ arr[j]=arr[j+1];
+ arr[j+1]=temp;
+ flag=1;
+ }
+ }
+ if(flag==0)
+ break;
+ }
+}
+int main()
+{
+ int testcases;
+ cin>>testcases;
+ while(testcases--)
+ {
+ int n;
+ cout<<"enter the number of elements in array"<<endl;
+ cin>>n;
+ int arr[n];
+ for(int i=0;i<n;i++)
+ {
+ arr[i]=i+1;
+ }
+ clock_t start,end;
+ start=clock();
+ bubble_sort(arr,n);
+ end=clock();
+ double time_taken=double(end-start)/(((double)CLOCKS_PER_SEC))*1000000;
+ cout<<"time taken by the program to sort : "<<time_taken<<" microseconds"<<endl;
+ }
+}

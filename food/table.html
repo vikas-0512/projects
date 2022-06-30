@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Table</title>
+    <style>
+        table,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 8px;
+        }
+            
+    </style>
+</head>
+<body>
+    <table>
+        <tr style="background-color: lightblue;padding: auto;">
+            <td colspan="8">
+                invoice #12345ABC
+            </td>
+            <td colspan="4">
+                18 Jul 2019
+            </td>
+        </tr>
+        <tr>
+            <pre>
+            <td colspan="6">
+                Pay to:,<br/>
+                The Tech Park <br/>
+                123 Willow street <br/>
+                Boulevard, LA-567892
+            </td>
+            <td colspan="6">
+                Costumer:<br/>
+                Jhon Lark<br/>
+                Dummy Apartments<br/>
+                276 Main Street<br/>
+                Boulevard, LA-567892
+            </td>
+        </pre> 
+        </tr>
+        <tr style="background-color: lightblue;padding: auto;">
+            <td colspan="5"style="font-weight: bold;">
+                Name/Description
+            </td>
+        
+            <td style="font-weight: bold;">
+                Qty.
+            </td>
+        
+            <td style="font-weight: bold;">
+                MRP
+            </td>
+            <td colspan="5" style="font-weight: bold;">
+                Amount
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="5">Biryani</td>
+            <td>3</td>
+            <td>400</td>
+            <td colspan="5" >1200</td>
+        </tr>
+        <tr>
+            <td colspan="5">Chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>
+            <td colspan="5" >600</td>
+        </tr>
+        <tr>
+            <td colspan="7" style="font-weight: bold; background-color: lightblue;padding: auto;">subtotal</td>
+            <td colspan="5" >1800</td>
+        </tr>
+        <tr>
+            <td  colspan="6" style="font-weight: bold; background-color: lightblue;padding: auto;">Tax</td>
+            <td>10%</td>
+            <td colspan="5" >180</td>
+        </tr>
+        <tr>
+            <td colspan="7" style="font-weight: bold; background-color: lightblue;padding: auto;">Grand total:</td>
+            <td colspan="5" >Rs:1620</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
